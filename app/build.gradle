@@ -114,18 +114,20 @@ android {
                 if (file('local.properties').exists()) {
                     Properties properties = new Properties()
                     properties.load(project.rootProject.file('local.properties').newDataInputStream())
-                    def appID = properties.getProperty("APP_ID_UMENG")
-                    if (appID != null) {
-                        buildConfigField "String", "APP_ID_UMENG", appID
-                    } else {
-                        buildConfigField "String", "APP_ID_UMENG", '"60254fc7425ec25f10f4293e"'
-                    }
+                    //TODO: 改成 Firebase (GA)
+//                    def appID = properties.getProperty("APP_ID_UMENG")
+//                    if (appID != null) {
+//                        buildConfigField "String", "APP_ID_UMENG", appID
+//                    } else {
+//                        buildConfigField "String", "APP_ID_UMENG", '"60254fc7425ec25f10f4293e"'
+//                    }
                 } else {
-                    buildConfigField "String", "APP_ID_UMENG", '"60254fc7425ec25f10f4293e"'
+                    //buildConfigField "String", "APP_ID_UMENG", '"60254fc7425ec25f10f4293e"'
                 }
             } else {
                 signingConfig signingConfigs.debug
-                buildConfigField "String", "APP_ID_UMENG", '"60254fc7425ec25f10f4293e"'
+                //TODO: 改成 Firebase (GA)
+                //buildConfigField "String", "APP_ID_UMENG", '"60254fc7425ec25f10f4293e"'
             }
         }
         debug {
@@ -194,7 +196,7 @@ android {
             //noinspection GrDeprecatedAPIUsage
             def abiName = output.getFilter(com.android.build.OutputFile.ABI)
             if (abiName == null) abiName = "universal"
-            output.versionCodeOverride = abiCodes.get(abiName, 0) * 100000 + variant.versionCode
+            //output.versionCodeOverride = abiCodes.get(abiName, 0) * 100000 + variant.versionCode
             output.outputFileName = "SmsF_${versionName}_${output.versionCode}_${abiName}_${variant.name}.apk"
 
             // 修改 output-metadata.json 追加编译日期、编译时间、Git Commit ID
@@ -285,8 +287,8 @@ dependencies {
     //屏幕适配AutoSize：https://github.com/JessYanCoding/AndroidAutoSize
     implementation 'me.jessyan:autosize:1.2.1'
     //友盟统计
-    implementation 'com.umeng.umsdk:common:9.6.8'
-    implementation 'com.umeng.umsdk:asms:1.8.6'
+    //implementation 'com.umeng.umsdk:common:9.6.8'
+    //implementation 'com.umeng.umsdk:asms:1.8.6'
 
     //预加载占位控件
     implementation 'me.samlss:broccoli:1.0.0'
