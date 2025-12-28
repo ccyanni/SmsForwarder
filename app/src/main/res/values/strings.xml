@@ -44,7 +44,7 @@
     <string name="insert_tag_call_type">通话类型</string>
     <string name="insert_tag_location">定位信息</string>
     <string name="insert_tag_location_longitude">定位经度</string>
-    <string name="insert_tag_location_latitude">定位维度</string>
+    <string name="insert_tag_location_latitude">定位纬度</string>
     <string name="insert_tag_location_address">定位地址</string>
     <string name="insert_tag_battery_pct">电池电量</string>
     <string name="insert_tag_battery_status">电池状态</string>
@@ -366,6 +366,8 @@
     <string name="forward_sms_tips">请授予读取短信、通知类短信、发送短信等权限，关闭验证码保护</string>
     <string name="sms_command">短信指令</string>
     <string name="sms_command_tips">根据短信指令开关对应功能，指令格式：smsf#功能名#动作名</string>
+    <string name="close_to_earpiece_turn_off_screen">靠近听筒关屏</string>
+    <string name="close_to_earpiece_turn_off_screen_tips">手动关闭系统超时锁屏后，盖住听筒即可关屏并保持唤醒状态</string>
     <string name="safe_phone_tips">仅处理指定手机请求，多个手机以逗号分隔</string>
     <string name="forward_calls">转发通话记录</string>
     <string name="forward_calls_tips">请授予读取通话记录、联系人等权限，并选择转发类型，再开启</string>
@@ -762,7 +764,7 @@
     <string name="api_location_tips">远程查询手机定位，方便找回手机/防止老少走丢</string>
     <string name="api_location_permission_tips">请先在【通用设置】中【启用GPS定位功能】</string>
     <string name="location_longitude">经度：%s</string>
-    <string name="location_latitude">维度：%s</string>
+    <string name="location_latitude">纬度：%s</string>
     <string name="location_address">地址：%s</string>
     <string name="location_time">时间：%s</string>
     <string name="location_provider">供应商：%s</string>
@@ -1127,7 +1129,7 @@
     <string name="calc_type_distance">根据GPS坐标计算距离</string>
     <string name="calc_type_address">根据地址关键字判断</string>
     <string name="longitude">经度</string>
-    <string name="latitude">维度</string>
+    <string name="latitude">纬度</string>
     <string name="distance1">以经纬度为中心，</string>
     <string name="distance2">米半径建立电子围栏</string>
     <string name="current_coordinates">当前坐标</string>
