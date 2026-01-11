@@ -70,11 +70,11 @@ class ServiceProtocolFragment : BaseFragment<FragmentServiceProtocolBinding?>() 
         /**
          * 用户协议asset本地保存路径
          */
-        private const val ACCOUNT_PROTOCOL_ASSET_PATH = "protocol/account_protocol.txt"
+        private const val ACCOUNT_PROTOCOL_ASSET_PATH = "protocol/account_protocol_zh-TW.txt"
 
         /**
          * 隐私政策asset本地保存路径
          */
-        private const val PRIVACY_PROTOCOL_ASSET_PATH = "protocol/privacy_protocol.txt"
+        private const val PRIVACY_PROTOCOL_ASSET_PATH = "protocol/privacy_protocol_zh-TW.txt"
     }
 }
