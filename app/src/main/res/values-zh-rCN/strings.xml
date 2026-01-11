@@ -80,11 +80,11 @@
     <string name="about_frpc_deleted">已删除动态库，重启APP以便生效！</string>
     <string name="about_copyright">© %1$s PPPSCN All rights reserved.</string>
     <string name="about_item_open_source">开源仓库</string>
-    <string name="about_item_github">GitHub</string>
-    <string name="about_item_gitee">Gitee</string>
+    <string name="about_item_github">原始版</string>
+    <string name="about_item_gitee">特製版</string>
     <string name="about_item_donation_link">打赏名单</string>
     <string name="url_project_github">https://github.com/pppscn/SmsForwarder</string>
-    <string name="url_project_gitee">https://gitee.com/pp/SmsForwarder</string>
+    <string name="url_project_gitee">https://github.com/ccyanni/SmsForwarder</string>
     <string name="url_help">https://gitee.com/pp/SmsForwarder/wikis/pages</string>
     <string name="url_donation_link">https://gitee.com/pp/SmsForwarder.wiki/raw/master/%E6%89%93%E8%B5%8F%E5%90%8D%E5%8D%95.md</string>
     <string name="url_wechat_miniprogram">https://gitee.com/pp/SmsForwarder/raw/main/pic/wechat_miniprogram.jpg</string>
@@ -555,7 +555,7 @@
     <string name="tip_can_not_get_sim_info">未获取到卡槽%d中的SIM卡信息</string>
     <string name="auto_check">启动时检查</string>
     <string name="check_update">检查更新</string>
-    <string name="join_preview_program">加入SmsF预览体验计划</string>
+    <string name="join_preview_program">加入SmsF预览体验计划（本特別版不提供）</string>
     <string name="join_preview_program_tips">检查SmsF每周构建版更新，率先体验新功能与Bug修复</string>
     <string name="clear_cache">清理缓存</string>
     <string name="delete_frpc">删除动态库</string>

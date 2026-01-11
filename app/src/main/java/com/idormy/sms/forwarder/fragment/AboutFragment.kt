@@ -65,6 +65,7 @@ class AboutFragment : BaseFragment<FragmentAboutBinding?>(), SuperTextView.OnSup
         val currentYear = dateFormat.format(Date())
         binding!!.copyright.text = java.lang.String.format(resources.getString(R.string.about_copyright), currentYear)
 
+        /*
         binding!!.scbAutoCheckUpdate.isChecked = SettingUtils.autoCheckUpdate
         binding!!.scbAutoCheckUpdate.setOnCheckedChangeListener { _, isChecked ->
             SettingUtils.autoCheckUpdate = isChecked
@@ -77,6 +78,7 @@ class AboutFragment : BaseFragment<FragmentAboutBinding?>(), SuperTextView.OnSup
                 XToastUtils.success(getString(R.string.join_preview_program_tips))
             }
         }
+        */
     }
 
     override fun initListeners() {
@@ -127,9 +129,10 @@ class AboutFragment : BaseFragment<FragmentAboutBinding?>(), SuperTextView.OnSup
     @SingleClick
     override fun onClick(v: SuperTextView) {
         when (v.id) {
+            /*
             R.id.menu_join_preview_program -> {
                 XToastUtils.info(getString(R.string.join_preview_program_tips))
-            }
+            }*/
 
             R.id.menu_version -> {
                 XToastUtils.info(
